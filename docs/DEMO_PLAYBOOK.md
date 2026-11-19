@@ -63,3 +63,7 @@ The project owner reported a successful local end-to-end test using the React si
 **Not yet verified:** the new in-memory local dashboard implementation, publicly hosted n8n/backend, synchronized production CRM, actual AI model scoring, customer-facing email auto-replies, and unattended 24/7 delivery.
 
 For a client screen recording, demonstrate the real execution and use fictional data; avoid revealing actual email addresses or credentials.
+
+## V2 local dashboard verification — 2026-11-19
+
+The project owner confirmed that after submitting a test lead, the local dashboard refreshed to show the lead and the Gmail notification was received. This verifies the in-memory local dashboard and email flow by user report. It does not establish persistent storage, authentication, hosted backend availability, or AI model scoring.
