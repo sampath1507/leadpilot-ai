@@ -40,7 +40,7 @@ Open http://localhost:5173, fill in a **fictional** lead and submit. Verify:
 3. The lead row is appended to the configured Google Sheet.
 4. The Gmail notification arrives.
 
-**Current limitation:** In live mode, submissions are forwarded to n8n but are not automatically loaded into the browser-local dashboard. To show the real lead record, open Google Sheets or n8n executions. Do not claim a synchronized CRM.
+**Updated local dashboard:** In live mode, the local bridge retains up to 50 successful submissions in memory and exposes them to the React dashboard on the same computer. Refresh to view the latest leads. Data disappears when the bridge restarts; status editing is disabled in live mode. This is not a durable, authenticated, or synchronized production CRM.
 
 ## Troubleshooting
 - If the form fails, check that n8n is running and the workflow is published.
@@ -60,6 +60,6 @@ The project owner reported a successful local end-to-end test using the React si
 
 **Verified by user report:** a form submission was accepted, a Google Sheets row was created, and the Gmail notification arrived.
 
-**Not yet verified:** publicly hosted n8n/backend, synchronized production CRM, actual AI model scoring, customer-facing email auto-replies, and unattended 24/7 delivery.
+**Not yet verified:** the new in-memory local dashboard implementation, publicly hosted n8n/backend, synchronized production CRM, actual AI model scoring, customer-facing email auto-replies, and unattended 24/7 delivery.
 
 For a client screen recording, demonstrate the real execution and use fictional data; avoid revealing actual email addresses or credentials.
