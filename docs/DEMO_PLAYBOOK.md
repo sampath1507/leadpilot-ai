@@ -52,3 +52,14 @@ Open http://localhost:5173, fill in a **fictional** lead and submit. Verify:
 'Imagine a potential customer fills out this form. LeadPilot captures the request and highlights important details. In the live automation demonstration, n8n records the inquiry in Google Sheets and notifies the team by email. This can be adapted to your business, tools and follow-up process.'
 
 Do not imply that these are real customer results. Do not use real client data in a public screen recording.
+
+
+## Verified local integration — 2026-11-19
+
+The project owner reported a successful local end-to-end test using the React site in `VITE_API_MODE=live`, the Node.js bridge, the published `/webhook/lead-intake` n8n workflow, Google Sheets and Gmail.
+
+**Verified by user report:** a form submission was accepted, a Google Sheets row was created, and the Gmail notification arrived.
+
+**Not yet verified:** publicly hosted n8n/backend, synchronized production CRM, actual AI model scoring, customer-facing email auto-replies, and unattended 24/7 delivery.
+
+For a client screen recording, demonstrate the real execution and use fictional data; avoid revealing actual email addresses or credentials.
